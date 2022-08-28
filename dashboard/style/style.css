@@ -163,6 +163,81 @@ img {
   cursor: pointer;
 }
 
+.modal__edit, .modal__delete{
+  position: fixed;
+  width: 100%;
+  padding: 0 86px;
+  height: 100vh;
+  right: 0;
+  bottom: 0;
+  display: flex; 
+  align-items: center;
+  background-color: var(--black);
+}
+
+.modal__edit, .modal__delete{
+  display: none;
+}
+
+.modal__delete{
+  padding: 0 20px;
+}
+
+.modal__edit__form, .message {
+  width: 100%;
+  background-color: var(--ligth-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  padding: 19px 0 40px 0;
+}
+
+.modal__edit__form > label{
+  font-size: 2rem;
+  font-weight:700;
+  color: var(--white);
+  margin-bottom: 2rem;
+}
+
+.modal__edit__form > textarea{
+  width: 80%;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  margin-bottom: 2rem;
+  padding: 10px;
+  resize: none;
+}
+
+.modal__edit__form > button {
+  background-color: var(--dark-purple);
+  border: none;
+  padding: 0.5rem 3rem;
+  font-weight: 700;
+  border-radius: 20px;
+  color: var(--white);
+  cursor: pointer;
+
+}
+
+.message > p{
+  font-size: 1.6rem;
+  color: var(--white);
+  
+}
+
+.message > button{
+  background-color: var(--red);
+  border: none;
+  padding: 0.5rem 3rem;
+  font-weight: 700;
+  border-radius: 20px;
+  color: var(--white);
+  margin-top: 1.3rem;
+  cursor: pointer;
+}
+
 @media (min-width: 768px) {
   .main__container {
     padding: 0 20%;
