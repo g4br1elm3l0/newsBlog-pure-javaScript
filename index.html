@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
   <script src="./src/script.js" defer type="module"></script>
+  <script src="./src/login.js" defer type="module"></script>
   <title>m2-entrega-blog-m2</title>
 </head>
 
@@ -19,10 +20,9 @@
     <section class="entrar--conteiner">
       <h2>Entrar</h2>
       <form action="">
-        <input type="email" placeholder="Email">
-        <input type="password" placeholder="Senha">
-
-        <button type="submit">Entrar</button>
+        <input type="email" id="emailInput" placeholder="Email">
+        <input type="password" id="passwordInput" placeholder="Senha">
+        <button type="button" id="btnLogin">Entrar</button>
       </form>
     </section>
 
@@ -31,10 +31,10 @@
     <section class="cadastrar-conteiner">
       <h2>Cadastrar</h2>
       <form action="">
-        <input type="text" placeholder="Nome de Usuario">
-        <input type="email" placeholder="Email">
-        <input type="text" placeholder="Foto de Perfil">
-        <input type="password" placeholder="Senha">
+        <input id="nomeCadastro" type="text" placeholder="Nome de Usuario" required>
+        <input type="email" id="emailCadastro" placeholder="Email" required>
+        <input type="text" id="fotoCadastro" placeholder="Foto de Perfil" required>
+        <input type="password" id="senhaCadastro" placeholder="Senha" required>
 
         <button type="submit" id="cadastrar--button">Cadastrar</button>
       </form>
