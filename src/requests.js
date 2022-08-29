@@ -34,6 +34,8 @@ export class ApiRequests {
                 console.log(res);
                 localStorage.setItem("@kenzieBlog:token", res.token)
                 localStorage.setItem("@kenzieBlog:User_id", res.userId)
+                localStorage.setItem("@kenzieBlog:User_id", res.userId)
+                localStorage.setItem("@kenzieBlog:User_id", res.userId)
                 response = true
             })
             .catch(err => {

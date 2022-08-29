@@ -1,7 +1,7 @@
-import { Post } from "./usersPosts.js";
-import { Request } from "./request.js";
-import { logButton } from "./logout.js";
 import { AddPost } from "./addPost.js";
+import { logButton } from "./logout.js";
+import { Request } from "./request.js";
+import { Post } from "./usersPosts.js";
 
 export class Render {
     static async renderPosts() {
@@ -13,7 +13,7 @@ export class Render {
 
         const postDatabase = await Request.listPosts()
 
-        const { avatarUrl, username } = await Request.searchUser(localStorage.getItem("@kenzieBlog: id"))
+        const { avatarUrl, username } = await Request.searchUser(localStorage.getItem("@kenzieBlog:User_id"))
 
         profile.src = avatarUrl
         user.innerText = username

@@ -1,11 +1,6 @@
 import { ApiRequests } from "./requests.js";
 class LoginPage {
     static async renderizarLoginPage() {
-        // let token = localStorage.getItem("@kenzieBlog:token")
-
-        // if (token) {
-        //     window.location.assign("./dashboard/dashboard.html")
-        // }
 
         let emailInput = document.getElementById('emailInput')
         let passwordInput = document.getElementById('passwordInput')

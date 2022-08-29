@@ -2,11 +2,15 @@
 export class Request {
 
     static baseUrl = "https://blog-m2.herokuapp.com"
-    static token = localStorage.getItem("@kenzieBlog: token")
+    static token = localStorage.getItem("@kenzieBlog:token")
     static header = {
         "Content-type": "application/json",
         Authorization: `Bearer ${this.token}`
     }
+
+
+
+
 
     static async listPosts() {
         const list = await fetch(`${this.baseUrl}/posts?page=1`, {
@@ -34,6 +38,7 @@ export class Request {
     }
 
     static async searchUser(id) {
+
         const user = await fetch(`${this.baseUrl}/users/${id}`, {
             headers: this.header
         })
@@ -43,14 +48,14 @@ export class Request {
 
         return user
     }
-    
+
     static async searchPost(id) {
         const postContent = await fetch(`${this.baseUrl}/posts/${id}`, {
             headers: this.header
         })
-        .then(resp => resp.json())
-        .then(resp => resp.content)
-        .catch(err => err)
+            .then(resp => resp.json())
+            .then(resp => resp.content)
+            .catch(err => err)
 
         return postContent
     }
@@ -61,9 +66,9 @@ export class Request {
             headers: this.header,
             body: JSON.stringify(content)
         })
-        .then(resp => resp.json())
-        .then(resp => resp)
-        .catch(err => err)
+            .then(resp => resp.json())
+            .then(resp => resp)
+            .catch(err => err)
 
         return post
     }
@@ -73,12 +78,12 @@ export class Request {
             method: "DELETE",
             headers: this.header
         })
-        .then(resp => resp.json())
-        .catch(err => err)
+            .then(resp => resp.json())
+            .catch(err => err)
 
         return post
     }
 
 }
 
-}
+
