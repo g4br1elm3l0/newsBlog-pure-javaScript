@@ -23,9 +23,7 @@ class Signup {
             }
             await ApiRequests.createUser(body)
         })
-
     }
-
 }
 Signup.pegandoElemento()
 

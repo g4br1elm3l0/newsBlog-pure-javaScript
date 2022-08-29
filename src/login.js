@@ -13,7 +13,6 @@ class LoginPage {
 
         console.log(btnLogin);
         btnLogin.addEventListener("click", async () => {
-            console.log("cheguei aqui");
             let data = {
                 "email": emailInput.value,
                 "password": passwordInput.value,
