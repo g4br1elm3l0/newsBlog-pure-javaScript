@@ -1,0 +1,99 @@
+body {
+    background-color: #454D6B;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+.conteiner {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    justify-content: space-around;
+    row-gap: 17px;
+}
+
+
+.entrar--conteiner {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 260px;
+    height: 260px;
+    text-align: center;
+    background-color: #6495ED;
+    border-radius: 8px;
+    justify-content: space-evenly;
+
+}
+
+h2 {
+    margin-top: 9px;
+    font-size: 23px;
+    color: #ffffff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    height: 130px;
+}
+
+input {
+    padding: 12px;
+    border-radius: 15px;
+    width: 230px;
+    margin: 0 auto;
+}
+
+button {
+    width: 120px;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    height: 33px;
+    text-align: center;
+    background-color: #5C5D8D;
+    color: #ffffff;
+
+
+}
+
+
+.cadastrar-conteiner {
+
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 260px;
+    height: 350px;
+    row-gap: 25px;
+    text-align: center;
+    background-color: #6495ED;
+    border-radius: 8px;
+
+}
+
+.cadastrar-conteiner>form {
+    height: 220px;
+}
+
+.cadastrar--button {
+    margin-top: 200px;
+}
+
+
+
+@media (min-width: 768px) {
+
+    .conteiner {
+        flex-direction: row;
+        align-items: center;
+    }
+
+
+
+}
