@@ -29,6 +29,20 @@
         </form>
 
         <ul class="list"></ul>
+        
+        <section class="modal__edit">
+            <form class="modal__edit__form">
+                <label for="edit">Editar</label>
+                <textarea id="postEdit" name="edit" type="text" placeholder="Estou mudando meu comentário" rows="5" ></textarea>
+                <button id="submit">Enviar</button>
+            </form>
+        </section>
+        <section class="modal__delete">
+            <div class="message">
+                <p>Deseja Deletar esse poster?</p>
+                <button id="delete">Deletar</button>
+            </div>
+        </section>
 
         <script type="module" src="./js/posts.js"></script>
     </main>

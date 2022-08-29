@@ -43,5 +43,42 @@ export class Request {
 
         return user
     }
+    
+    static async searchPost(id) {
+        const postContent = await fetch(`${this.baseUrl}/posts/${id}`, {
+            headers: this.header
+        })
+        .then(resp => resp.json())
+        .then(resp => resp.content)
+        .catch(err => err)
+
+        return postContent
+    }
+
+    static async editPost(id, content) {
+        const post = await fetch(`${this.baseUrl}/posts/${id}`, {
+            method: "PATCH",
+            headers: this.header,
+            body: JSON.stringify(content)
+        })
+        .then(resp => resp.json())
+        .then(resp => resp)
+        .catch(err => err)
+
+        return post
+    }
+
+    static async deletePost(id) {
+        const post = await fetch(`${this.baseUrl}/posts/${id}`, {
+            method: "DELETE",
+            headers: this.header
+        })
+        .then(resp => resp.json())
+        .catch(err => err)
+
+        return post
+    }
+
+}
 
 }
